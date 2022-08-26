@@ -2,13 +2,15 @@
   <thead>
     <tr>
       <th>Id</th>
-      <th>Nome</th>
+      <th>Frutas</th>
+      <th>Verduras</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let values of catchValues$ | async">
       <td>{{ values.id }}</td>
-      <td>{{ values.title }}</td>
+      <td>{{ values.fruta }}</td>
+      <td>{{ values.verdura }}</td>
     </tr>
   </tbody>
 </table>

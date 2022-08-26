@@ -17,18 +17,18 @@ export class MockComponent implements OnInit {
 
   constructor(public mockService: MockService, private route: Router) {}
 
-  catchValues$ = this.mockService.mockValues();
+  catchValues$ = this.mockService.mockValues().pipe(tap(console.log));
 
   ngOnInit() {
     this.valueSubs = this.mockService
       .mockValues()
-      .subscribe((v) => (this.titleValue = v[0].title));
+      .subscribe((v) => (this.titleValue = v[0].fruta));
     this.valueSubs = this.mockService
       .mockValues()
-      .subscribe((v) => (this.titleValue2 = v[1].title));
+      .subscribe((v) => (this.titleValue2 = v[1].fruta));
   }
 
   criarFruta() {
-    this.route.navigate(['mock-form']);
+    this.route.navigate(["mock-form"]);
   }
 }

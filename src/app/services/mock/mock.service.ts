@@ -5,7 +5,8 @@ import { tap } from 'rxjs/operators';
 
 export interface Fruta{
   id: number;
-  title: string;
+  fruta: string;
+  verdura: string;
 }
 @Injectable({
   providedIn: 'root'
@@ -16,8 +17,8 @@ export class MockService {
     this.mockValues();
    }
 
-  mockValues(): Observable<Array<Fruta>> {
-    return this.http.get<Array<Fruta>>('http://localhost:3000/teste');
+  mockValues(): Observable<Array<any>> {
+    return this.http.get<Array<any>>('http://localhost:3000/teste');
   }
 
   mockSave(data: any): Observable<any>{
