@@ -1,0 +1,17 @@
+
+<table class="main-table">
+    <thead>
+        <tr>
+            <th>Pokemon</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+        
+        <tr *ngFor="let pokemon of pokemonService.pokemons; let i = index">
+            <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{i+1}}.png"></td>
+            <td>{{pokemon.name}}</td>
+        </tr>
+    </tbody>
+</table>

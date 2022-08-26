@@ -1,0 +1,27 @@
+http://localhost:3000/teste
+
+###
+
+GET http://localhost:3000/teste/1
+
+###
+
+POST http://localhost:3000/teste HTTP/1.1
+content-type: application/json
+
+{
+      "title": "amazing"
+}
+
+###
+
+PUT  http://localhost:3000/teste/3 HTTP/1.1
+content-type: application/json
+
+{
+      "title": "Morango"
+}
+
+###
+
+DELETE http://localhost:3000/teste/3

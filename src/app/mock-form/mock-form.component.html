@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+  <label for="name">
+    Insira o nome da fruta
+    <input type="text" id="name" formControlName="fruta" />
+  </label>
+  <label for="verdura">
+    Insira o nome da verdura
+    <input type="text" id="verdura" formControlName="verdura" />
+  </label>
+  <button (click)="Salvar()">
+    Salvar
+  </button>
+</form>

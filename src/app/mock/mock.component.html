@@ -1,0 +1,24 @@
+<table class="main-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let values of catchValues$ | async">
+      <td>{{ values.id }}</td>
+      <td>{{ values.title }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+    {{titleValue}}
+    {{titleValue2}}
+</div>
+
+<button (click)="criarFruta()">
+    Criar uma nova fruta
+</button>
+
