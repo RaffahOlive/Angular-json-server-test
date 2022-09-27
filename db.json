@@ -29,6 +29,16 @@
       "id": 6,
       "fruta": "Abacaxi",
       "verdura": "Agrião"
+    },
+    {
+      "fruta": "a",
+      "verdura": "b",
+      "id": 7
+    },
+    {
+      "fruta": "a",
+      "verdura": "b",
+      "id": 8
     }
   ]
 }
