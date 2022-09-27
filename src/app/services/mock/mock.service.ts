@@ -24,4 +24,8 @@ export class MockService {
   mockSave(data: any): Observable<any>{
     return this.http.post<any>('http://localhost:3000/teste', data);
   }
+
+  mockEdit(){
+    
+  }
 }
